@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="24f1002781@ds.study.iitm.ac.in">
+    <meta name="contact" content="24f1002781@ds.study.iitm.ac.in">
     <title>Q4 2025 Earnings Report - Financial Presentation</title>
     
     <!-- Reveal.js CSS - Using relative paths -->
@@ -32,6 +34,12 @@
             color: #42affa;
             margin-top: 2em;
         }
+        .email-display {
+            font-size: 1.1em;
+            color: #64c864;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
         .financial-metric {
             display: inline-block;
             background: rgba(100, 200, 100, 0.3);
@@ -58,12 +66,13 @@
                 <h1>Q4 2025 Earnings Report</h1>
                 <h3>Financial Performance & Strategic Insights</h3>
                 <div class="contact-info">
-                    <p>24f1002781@ds.study.iitm.ac.in</p>
+                    <p class="email-display">📧 24f1002781@ds.study.iitm.ac.in</p>
                     <p><small>Presented by: Financial Consulting Team</small></p>
                 </div>
                 <aside class="notes">
                     Welcome to the Q4 2025 Earnings Report presentation.
                     This covers our financial performance, key metrics, and strategic direction.
+                    Presenter email: 24f1002781@ds.study.iitm.ac.in
                 </aside>
             </section>
 
@@ -219,8 +228,8 @@ console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
                     <p>Thank you for your attention</p>
                     <hr>
                     <p class="contact-info">
-                        <strong>Contact:</strong><br>
-                        Email: 24f1002781@ds.study.iitm.ac.in<br>
+                        <strong>Contact Information:</strong><br>
+                        <span class="email-display">24f1002781@ds.study.iitm.ac.in</span><br>
                         <small>For additional questions or clarifications</small>
                     </p>
                 </div>
@@ -228,6 +237,7 @@ console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
                     Thank stakeholders for their time. Be prepared
                     to address detailed financial questions and discuss
                     forward guidance for 2025.
+                    Contact: 24f1002781@ds.study.iitm.ac.in
                 </aside>
             </section>
 
@@ -250,35 +260,22 @@ console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
         // Initialize Reveal.js
         Reveal.initialize({
             hash: true,
-            // Display settings
             width: 960,
             height: 700,
             margin: 0.1,
             minScale: 0.2,
             maxScale: 2.0,
-            
-            // Transition style
             transition: 'slide',
             transitionSpeed: 'default',
-            
-            // Fragment options
             fragmentInURL: true,
-            
-            // Keyboard shortcuts
             keyboard: true,
-            
-            // Speaker notes
             showNotes: false,
-            
-            // Plugins
             plugins: [
                 RevealMarkdown,
                 RevealHighlight,
                 RevealNotes,
                 RevealMath.MathJax3
             ],
-            
-            // Math plugin configuration
             math: {
                 mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
                 config: 'TeX-AMS_HTML-fullWidth',
@@ -290,8 +287,8 @@ console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
             }
         });
 
-        // Debug logging
         console.log('✅ RevealJS initialized successfully');
+        console.log('📧 Presenter: 24f1002781@ds.study.iitm.ac.in');
         console.log('📊 Presentation loaded with plugins: Markdown, Highlight, Notes, Math');
     </script>
 
