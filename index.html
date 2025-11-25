@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2025 Earnings Report - Financial Presentation</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        .reveal pre {
+            width: 100%;
+            font-size: 0.55em;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .reveal code {
+            padding: 2px 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+        .contact-info {
+            font-size: 0.8em;
+            color: #42affa;
+            margin-top: 2em;
+        }
+        .financial-metric {
+            display: inline-block;
+            background: rgba(100, 200, 100, 0.3);
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            border-left: 4px solid #64c864;
+        }
+        .formula-box {
+            background: rgba(100, 150, 200, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #6496c8;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: Title Slide -->
+            <section>
+                <h1>Q4 2025 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Insights</h3>
+                <div class="contact-info">
+                    <p>📧 24f1002781@ds.study.iitm.ac.in</p>
+                    <p><small>Presented by: Financial Consulting Team</small></p>
+                </div>
+                <aside class="notes">
+                    Welcome to the Q4 2025 Earnings Report presentation.
+                    This covers our financial performance, key metrics, and strategic direction.
+                </aside>
+            </section>
+
+            <!-- SLIDE 2: Executive Summary (with Markdown) -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    - **Revenue Growth**: 15% YoY increase <!-- .element: class="fragment" -->
+                    - **Profit Margin**: Improved by 2.3% <!-- .element: class="fragment" -->
+                    - **Market Position**: Top 3 in industry <!-- .element: class="fragment" -->
+                    - **Strategic Focus**: Digital transformation <!-- .element: class="fragment" -->
+                    
+                    > "Strong financial fundamentals with sustained growth trajectory"
+                </textarea>
+            </section>
+
+            <!-- SLIDE 3: Revenue Analysis with Animated Fragments -->
+            <section>
+                <h2>Revenue Analysis</h2>
+                <div style="margin-top: 2em;">
+                    <div class="fragment" data-fragment-index="0">
+                        <div class="financial-metric">
+                            <h4>Q4 Revenue</h4>
+                            <p style="font-size: 1.5em; color: #42affa;">$2.8B</p>
+                        </div>
+                    </div>
+                    <div class="fragment" data-fragment-index="1">
+                        <div class="financial-metric">
+                            <h4>Growth Rate</h4>
+                            <p style="font-size: 1.5em; color: #42affa;">+15.2%</p>
+                        </div>
+                    </div>
+                    <div class="fragment" data-fragment-index="2">
+                        <div class="financial-metric">
+                            <h4>YTD Growth</h4>
+                            <p style="font-size: 1.5em; color: #42affa;">+12.8%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    Discuss each metric individually. Note that Q4 showed exceptional growth
+                    due to holiday season demand and successful product launches.
+                </aside>
+            </section>
+
+            <!-- SLIDE 4: Financial Formulas with MathJax -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                
+                <div class="formula-box">
+                    <h4>Net Profit Margin</h4>
+                    <p>$$NPM = \frac{\text{Net Income}}{\text{Total Revenue}} \times 100$$</p>
+                    <p><strong>Q4 2025: 18.5%</strong> (vs 16.2% Q4 2024)</p>
+                </div>
+
+                <div class="formula-box">
+                    <h4>Return on Investment (ROI)</h4>
+                    <p>$$ROI = \frac{\text{Gain} - \text{Cost}}{\text{Cost}} \times 100$$</p>
+                    <p><strong>Q4 2025: 22.3%</strong></p>
+                </div>
+
+                <div class="formula-box">
+                    <h4>Earnings Per Share (EPS)</h4>
+                    <p>$$EPS = \frac{\text{Net Income}}{\text{Shares Outstanding}}$$</p>
+                    <p><strong>Q4 2025: $4.75</strong> (vs $4.12 in Q4 2024)</p>
+                </div>
+
+                <aside class="notes">
+                    These calculations show solid improvement across all metrics.
+                    The 2.3% margin improvement is notable in the current market.
+                </aside>
+            </section>
+
+            <!-- SLIDE 5: Code Sample - Financial Analysis (Python) -->
+            <section>
+                <h2>Data Processing Pipeline</h2>
+                <pre><code class="language-python" data-trim data-line-numbers="1-2|3-6|7-10|11-12">
+import pandas as pd
+import numpy as np
+
+# Load quarterly data
+data = pd.read_csv('quarterly_financials.csv')
+df = pd.DataFrame(data)
+
+# Calculate key metrics
+df['net_margin'] = (df['net_income'] / df['revenue']) * 100
+df['growth_rate'] = df['revenue'].pct_change() * 100
+df['eps'] = df['net_income'] / df['shares_outstanding']
+
+print(df[['revenue', 'net_margin', 'growth_rate', 'eps']])
+                </code></pre>
+                <aside class="notes">
+                    This Python pipeline processes quarterly financial data.
+                    We use pandas for data manipulation and numpy for calculations.
+                </aside>
+            </section>
+
+            <!-- SLIDE 6: JavaScript Example - Stock Price Calculation -->
+            <section>
+                <h2>Performance Metrics Calculation</h2>
+                <pre><code class="language-javascript" data-trim data-line-numbers="1|2-5|6-9|10-11">
+// Calculate investment returns
+function calculateReturns(initialInvestment, finalValue) {
+  const gain = finalValue - initialInvestment;
+  const returnPercentage = (gain / initialInvestment) * 100;
+  return returnPercentage;
+}
+
+// Example: $10,000 investment returned $12,300
+const investmentReturn = calculateReturns(10000, 12300);
+console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
+// Output: Investment Return: 23.00%
+                </code></pre>
+                <aside class="notes">
+                    This simple JS function demonstrates ROI calculation.
+                    Our portfolio achieved strong returns in Q4.
+                </aside>
+            </section>
+
+            <!-- SLIDE 7: Business Outlook -->
+            <section>
+                <h2>Strategic Outlook 2025</h2>
+                <div style="margin-top: 2em;">
+                    <div class="fragment" data-fragment-index="0">
+                        <h4>🎯 Digital Transformation</h4>
+                        <p>Cloud infrastructure investment</p>
+                    </div>
+                    <div class="fragment" data-fragment-index="1">
+                        <h4>🚀 Market Expansion</h4>
+                        <p>New geographic markets & product lines</p>
+                    </div>
+                    <div class="fragment" data-fragment-index="2">
+                        <h4>💡 Innovation Focus</h4>
+                        <p>AI & ML-powered solutions</p>
+                    </div>
+                    <div class="fragment" data-fragment-index="3">
+                        <h4>📊 Sustainability</h4>
+                        <p>ESG initiatives & carbon neutrality</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Walk through each strategic pillar. Emphasize commitment
+                    to sustainable growth and stakeholder value.
+                </aside>
+            </section>
+
+            <!-- SLIDE 8: Q&A Slide -->
+            <section>
+                <h2>Questions & Discussion</h2>
+                <div style="margin-top: 3em;">
+                    <p>Thank you for your attention</p>
+                    <hr>
+                    <p class="contact-info">
+                        <strong>Contact:</strong><br>
+                        Email: 24f1002781@ds.study.iitm.ac.in<br>
+                        <small>For additional questions or clarifications</small>
+                    </p>
+                </div>
+                <aside class="notes">
+                    Thank stakeholders for their time. Be prepared
+                    to address detailed financial questions and discuss
+                    forward guidance for 2025.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js Core Script -->
+    <script src="dist/reveal.js"></script>
+    
+    <!-- Reveal.js Plugins -->
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+
+    <!-- MathJax for Mathematical Equations -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script>
+        // Initialize Reveal.js
+        Reveal.initialize({
+            hash: true,
+            // Display settings
+            width: 960,
+            height: 700,
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 2.0,
+            
+            // Transition style
+            transition: 'slide',
+            transitionSpeed: 'default',
+            
+            // Fragment options
+            fragmentInURL: true,
+            
+            // Keyboard shortcuts
+            keyboard: true,
+            
+            // Speaker notes
+            showNotes: false,
+            
+            // Plugins
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.MathJax3
+            ],
+            
+            // Math plugin configuration
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-fullWidth',
+                tex2jax: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                    processEscapes: true
+                }
+            }
+        });
+    </script>
+
+    <!-- Keyboard Help -->
+    <script>
+        console.log('%c RevealJS Keyboard Shortcuts', 'color: #42affa; font-weight: bold;');
+        console.log('→ / ← : Navigate slides');
+        console.log('↓ / ↑ : Navigate vertical slides');
+        console.log('S : Speaker notes view');
+        console.log('F : Fullscreen');
+        console.log('ESC : Slide overview');
+        console.log('? : Help');
+    </script>
+</body>
+</html>
