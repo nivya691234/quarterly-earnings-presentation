@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4 2025 Earnings Report - Financial Presentation</title>
     
-    <!-- Reveal.js CSS -->
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <!-- Reveal.js CSS - Using absolute paths for GitHub Pages -->
+    <link rel="stylesheet" href="/quarterly-earnings-presentation/dist/reveal.css">
+    <link rel="stylesheet" href="/quarterly-earnings-presentation/dist/theme/black.css" id="theme">
     
     <!-- Syntax Highlighting -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="/quarterly-earnings-presentation/plugin/highlight/monokai.css">
     
     <!-- Custom Styles -->
     <style>
@@ -234,14 +234,14 @@ console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
         </div>
     </div>
 
-    <!-- Reveal.js Core Script -->
-    <script src="dist/reveal.js"></script>
+    <!-- Reveal.js Core Script - Using absolute paths -->
+    <script src="/quarterly-earnings-presentation/dist/reveal.js"></script>
     
     <!-- Reveal.js Plugins -->
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/math/math.js"></script>
+    <script src="/quarterly-earnings-presentation/plugin/markdown/markdown.js"></script>
+    <script src="/quarterly-earnings-presentation/plugin/highlight/highlight.js"></script>
+    <script src="/quarterly-earnings-presentation/plugin/notes/notes.js"></script>
+    <script src="/quarterly-earnings-presentation/plugin/math/math.js"></script>
 
     <!-- MathJax for Mathematical Equations -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -289,13 +289,18 @@ console.log(`Investment Return: ${investmentReturn.toFixed(2)}%`);
                 }
             }
         });
+
+        // Debug logging
+        console.log('✅ RevealJS initialized successfully');
+        console.log('📊 Presentation loaded with plugins: Markdown, Highlight, Notes, Math');
     </script>
 
     <!-- Keyboard Help -->
     <script>
-        console.log('%c RevealJS Keyboard Shortcuts', 'color: #42affa; font-weight: bold;');
+        console.log('%c RevealJS Keyboard Shortcuts', 'color: #42affa; font-weight: bold; font-size: 14px;');
         console.log('→ / ← : Navigate slides');
         console.log('↓ / ↑ : Navigate vertical slides');
+        console.log('Space : Advance (fragment or slide)');
         console.log('S : Speaker notes view');
         console.log('F : Fullscreen');
         console.log('ESC : Slide overview');
